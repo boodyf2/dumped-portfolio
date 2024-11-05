@@ -9,8 +9,6 @@ import { BackgroundGradientAnimation } from "./ui/GradientBg";
 import MagicButton from "./ui/MagicButton";
 import { FaCopy } from "react-icons/fa";
 import { useState } from "react";
-import animationData from "@/data/confetti.json";
-import Lottie from "lottie-react";
 
 const About = () => {
     const [isEmailCopied, setIsEmailCopied] = useState(false);
@@ -18,15 +16,6 @@ const About = () => {
         navigator.clipboard.writeText("abdalrahman.vim@gmail.com");
         setIsEmailCopied(true);
     };
-
-    // const lottieDefaultOptions = {
-    //     loop: false,
-    //     autoplay: isEmailCopied,
-    //     animationData: animationData,
-    //     rendererSettings: {
-    //         preserveAspectRatio: "xMidYMid slice",
-    //     },
-    // };
 
     return (
         <section className="relative py-20" id="about">
@@ -143,14 +132,6 @@ const About = () => {
                                 ? "Copy my email address"
                                 : "Email is copied!"}
                         </MagicButton>
-                        {/* {isEmailCopied && ( */}
-                        {/*     <Lottie */}
-                        {/*         {...lottieDefaultOptions} */}
-                        {/*         height={200} */}
-                        {/*         width={400} */}
-                        {/*         className="absolute -top-20 right-50" */}
-                        {/*     /> */}
-                        {/* )} */}
                     </div>
                     <div className="w-full h-full absolute top-0 left-0 ">
                         <BackgroundGradientAnimation className="object-cover object-center" />

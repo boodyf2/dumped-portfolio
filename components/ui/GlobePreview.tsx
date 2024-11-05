@@ -412,7 +412,7 @@ export function GlobeDemo() {
                     className="div"
                 >
                     <h2 className="text-center mt-10 text-xl md:text-4xl font-bold text-black dark:text-white">
-                        I'm very flexible with time zone communications
+                        I&apos;m very flexible with time zone communications
                     </h2>
                 </motion.div>
                 <div className="absolute w-full md:-bottom-20 h-72 md:h-full z-10">
